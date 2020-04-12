@@ -1,11 +1,11 @@
-package app
+package typeConversion
 
 import (
 	"fmt"
 	"strconv"
 )
 
-func Run() {
+func TypeConversion() {
 	var (
 		someString                       = "Foo"
 		someStringContainsNumber         = "123"

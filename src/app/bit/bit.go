@@ -1,4 +1,4 @@
-package app
+package bit
 
 import (
 	"fmt"
@@ -39,7 +39,7 @@ func getAnimalsWithHandAndTail(animals map[string]byte) map[string]byte {
 	return filteredAnimals
 }
 
-func Demo() {
+func Bit() {
 	animals := map[string]byte{
 		"monkey":  HAND | TAIL | EYE,
 		"human":   HAND | EYE,
@@ -49,13 +49,13 @@ func Demo() {
 	}
 
 	for name, code := range animals {
-		fmt.Println(fmt.Sprintf("\"%[1]s\" binary code is: %[2]b", strings.Title(name), code))
+		fmt.Printf("\"%[1]s\" binary code is: %[2]b\n", strings.Title(name), code)
 	}
 
 	for name := range getBlindAnimals(animals) {
-		fmt.Println(fmt.Sprintf("\"%[1]s\" is blind", strings.Title(name)))
+		fmt.Printf("\"%[1]s\" is blind\n", strings.Title(name))
 	}
 	for name := range getAnimalsWithHandAndTail(animals) {
-		fmt.Println(fmt.Sprintf("\"%[1]s\" has hand and tail", strings.Title(name)))
+		fmt.Printf("\"%[1]s\" has hand and tail\n", strings.Title(name))
 	}
 }

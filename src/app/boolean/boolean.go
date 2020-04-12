@@ -1,4 +1,4 @@
-package app
+package boolean
 
 import "fmt"
 
@@ -9,7 +9,7 @@ const (
 	JavaScript bool = true
 )
 
-func YouNow() {
+func Boolean() {
 	//noinspection GoBoolExpressions
-	fmt.Println(fmt.Sprintf("C: %[1]t, Java: %[2]t, PHP: %[3]t, JavaScript: %[4]t", C, Java, PHP, JavaScript))
+	fmt.Printf("C: %[1]t, Java: %[2]t, PHP: %[3]t, JavaScript: %[4]t\n", C, Java, PHP, JavaScript)
 }

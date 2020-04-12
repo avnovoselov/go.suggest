@@ -1,0 +1,21 @@
+package main
+
+import (
+	"example.com/suggest/src/app/bit"
+	"example.com/suggest/src/app/boolean"
+	"example.com/suggest/src/app/date"
+	"example.com/suggest/src/app/loop"
+	"example.com/suggest/src/app/mathematics"
+	"example.com/suggest/src/app/text"
+	"example.com/suggest/src/app/typeConversion"
+)
+
+func main() {
+	bit.Bit()
+	boolean.Boolean()
+	date.Date()
+	loop.Loop()
+	mathematics.Mathematics()
+	text.Text()
+	typeConversion.TypeConversion()
+}
